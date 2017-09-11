@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Crash Course</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<style>
+	body {
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size : 17px;
+		background : #f4f4f4;
+		line-height: 1.5em;
+	}
+	header {
+		color: #fff;
+		background-color: #333;
+		padding: 20px;
+		text-align: center;
+		border-bottom: 4px solid #000;
+		margin-bottom: 10px;
+	}
+	#container {
+		width: 90%;
+		margin: auto;
+		padding: 10px;
+	}
+	#box {
+		background: #333;
+		color: #fff;
+		width: 500px;
+		height: 90px;
+		padding: 40px;
+		text-align: center;
+	}
+
+	#box2 {
+		background: red;
+		width: 100px;
+		height: 100px;
+		position: relative;
+	}
+</style>
+<body>
+	<header>
+		<h1>jQuery Crash Course | AJAX</h1>
+	</header>
+	<div id="container">
+		<div id="result"></div>
+		<ul id="users"></ul>
+		<form id="postForm" action="https://jsonplaceholder.typicode.com/posts">
+			<input type="text" name="text" id="title" placeholder="Title"><br>
+			<textarea name="textarea" id="body" cols="30" rows="10" placeholder="Body Area"></textarea><br>
+			<input type="submit" value="submit">
+		</form>
+	</div>
+
+<script>
+	$(document).ready(function(){
+	/*		$('#result').load('js/test.html', function(responeTxt, statusTxt, xhr){
+				if (statusTxt == "success"){
+					alert('It went Fine');
+				} else if (statusTxt == "error"){
+					alert ("Error :"+xhr.statusText);
+				}
+			});*/
+	/*		$.get('js/test.html', function(data){
+				$('#result').html(data);
+			});*/
+	/*		$.getJSON('user.json', function(data){
+				$.each(data, function(i, user){
+					$('ul#users').append('<li>'+user.firstName+'</li>');
+				});
+			});*/
+/*		$.ajax({
+			method: 'GET',
+			url: 'https://jsonplaceholder.typicode.com/posts',
+			dataType: 'json'
+		}).done(function(data){
+			$.map(data, function(post, i){
+				$('#result').append('<h3>'+post.title+'</h3><p>'+post.body+'</p>');
+			});
+		});*/
+	});
+</script>
+		 
+</body>
+</html>

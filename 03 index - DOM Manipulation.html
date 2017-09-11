@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS Crash Course</title>
+	<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+</head>
+<style>
+	body {
+		font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+		font-size : 17px;
+		background : #f4f4f4;
+		line-height: 1.5em;
+	}
+	header {
+		color: #fff;
+		background-color: #333;
+		padding: 20px;
+		text-align: center;
+		border-bottom: 4px solid #000;
+		margin-bottom: 10px;
+	}
+	#container {
+		width: 90%;
+		margin: auto;
+		padding: 10px;
+	}
+	.myClass {
+		color: blue;
+		background : black;
+	}
+</style>
+<body>
+	<header>
+		<h1>jQuery Crash Course</h1>
+	</header>
+	<div id="container">
+		<button id="btn1">Button 01</button>
+		<p id="para1">Paragrap one.</p>
+		<p id="para2">Paragrap two.</p>
+		<div id="myDiv"></div>
+		<input type="text" name="text" id="newitem">
+		<ul>
+			<li>List Item 1</li>
+			<li>List Item 2</li>
+			<li>List Item 3</li>
+			<li>List Item 4</li>
+		</ul>
+		<a href="http://google.com">Google</a>		
+	</div>
+	<ul id="newul">
+		
+	</ul>
+
+<script>
+	$(document).ready(function(){
+		// $('#para1').css('color','red');
+		// $('#para1').css({color:'red',background:'gray'});
+		// $('#para2').addClass('myClass');
+		// $('#para2').removeClass('myClass');
+	/*		$('#btn1').hover(function(){
+				$('#para2').toggleClass('myClass');
+			});*/
+		// $('#myDiv').text('Hello World');
+		// $('#myDiv').html('<mark>Hello Akther<mark>');
+		// alert($('#myDiv').text()); //We can show the DIV value by text cmd, see upper line
+		// $('ul').append('<li>Appended List Item</li>');
+		// $('ul').prepend('<li>Prepended List Item</li>');
+		// $('#para1').appendTo('#para2');
+		// $('#para1').prependTo('#para2');
+		// $('ul').before('<h3> Inserted Before LI</h3>');
+		// $('ul').after('<h3> Inserted after LI</h3>');
+		// $('ul').empty();
+		// $('ul').detach();
+		// $('a').attr('target', '_blank');
+		// $('a').removeAttr('target');
+		// $('p').wrapAll('<h1>');
+/*				$('#newitem').keypress(function(e){  //keypress or keyup same cmd
+					var code = e.which;
+					if(code == 13){
+						e.preventDefault();
+						$('ul').append('<li>'+e.target.value+'</li>');
+					}
+					
+				});*/
+
+/*			var myArr = ['Akther','Hossain','Khan','Bishu'];
+			$.each(myArr,function(index, value){
+				$('#newul').append('<li>'+ value +'</li>');
+			});*/
+
+
+	});	
+
+</script>
+		 
+</body>
+</html>
